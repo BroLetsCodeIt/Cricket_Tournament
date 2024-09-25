@@ -5,13 +5,9 @@ import {
   setCurrentStep,
   updateFormData,
 } from "../../../redux/slice/onBoardingCricketslice";
-import TextInput from "../../FormInputs/TextInput";
-import SelectInput from "../../FormInputs/SelectInput";
 import NavButtons from "../../FormInputs/NavButton";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { div } from "framer-motion/client";
-import Loader from "../../Loader";
 import { Loader2 } from "lucide-react";
 import toast from "react-hot-toast";
 

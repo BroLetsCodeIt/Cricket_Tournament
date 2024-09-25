@@ -6,7 +6,6 @@ import {
   updateFormData,
 } from "../../../redux/slice/onBoardingCricketslice";
 import TextInput from "../../FormInputs/TextInput";
-import SelectInput from "../../FormInputs/SelectInput";
 import NavButtons from "../../FormInputs/NavButton";
 
 
@@ -65,26 +64,26 @@ const TeamRegistration = () => {
       <div className="grid gap-6 sm:grid-cols-2">
         <TextInput
           label="Team Name"
-          name="fullName"
+          name="teamname"
           register={register}
           errors={errors}
         />
         <TextInput
           label="Team Captain Name"
-          name="location"
+          name="captainname"
           register={register}
           errors={errors}
         />
         <TextInput
           label="Team Contact Email"
-          name="email"
+          name="teamemail"
           type="email"
           register={register}
           errors={errors}
         />
         <TextInput
           label="Number of Players"
-          name="phone"
+          name="playerphone"
           type="number"
           register={register}
           errors={errors}

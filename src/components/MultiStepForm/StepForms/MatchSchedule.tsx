@@ -66,21 +66,21 @@ const MatchSchedule = () => {
       <TextInput
           label="Match Date"
           type="date"
-          name="dob"
+          name="matchdate"
           register={register}
           errors={errors}
           className="w-[100%]"
         />
         <SelectInput
           label="Opposing Team"
-          name="gender"
+          name="opposingteam"
           register={register}
           options={opposingteam}
         />
        <TextInput 
         label="Match Time"
         type="time"
-        name="time"
+        name="matchtime"
         errors={errors}
         register={register}
        />    

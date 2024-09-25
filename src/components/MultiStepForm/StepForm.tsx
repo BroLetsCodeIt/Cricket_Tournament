@@ -3,7 +3,6 @@
 import { useAppSelector } from "../../hooks";
 import ConfirmationReview from "./StepForms/ConfirmationReview";
 import MatchSchedule from "./StepForms/MatchSchedule";
-import PaymentDetails from "./StepForms/PaymentDetails";
 import RulesandRegulation from "./StepForms/RulesandRegulation";
 import TeamRegistration from "./StepForms/TeamRegistration";
 import TournamentDetails from "./StepForms/TournamentDetails";

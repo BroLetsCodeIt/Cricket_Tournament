@@ -10,6 +10,7 @@ interface FormData {
     dob : string ;
     location : string ;
     country : string ;
+    
   };
 export default function TextInput({
   label,
