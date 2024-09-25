@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useAppDispatch, useAppSelector } from "../../../hooks";
 import {
@@ -52,16 +51,7 @@ const TeamRegistration = () => {
   };
 
 
-  const gender = [
-    {
-      id: "male",
-      title: "Male",
-    },
-    {
-      id: "female",
-      title: "Female",
-    },
-  ];
+  
 
   return (
     <form className="px-12 py-4" onSubmit={handleSubmit(processData)}>

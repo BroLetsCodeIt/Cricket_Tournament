@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useAppDispatch, useAppSelector } from "../../../hooks";
 import {
-  setCurrentStep,
+  
   updateFormData,
 } from "../../../redux/slice/onBoardingCricketslice";
 import NavButtons from "../../FormInputs/NavButton";
@@ -25,7 +24,7 @@ type Inputs = {
 
 /*----------- Function -------------- */
 const ConfirmationReview = () => {
-  const currentStep = useAppSelector((store) => store.onboarding.currentStep);
+//   const currentStep = useAppSelector((store) => store.onboarding.currentStep);
   const formData = useAppSelector((store) => store.onboarding.formData);
   const dispatch = useAppDispatch();
   const {

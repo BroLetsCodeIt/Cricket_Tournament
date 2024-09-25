@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useAppDispatch, useAppSelector } from "../../../hooks";
 import {
@@ -6,7 +5,6 @@ import {
   updateFormData,
 } from "../../../redux/slice/onBoardingCricketslice";
 import TextInput from "../../FormInputs/TextInput";
-import SelectInput from "../../FormInputs/SelectInput";
 import NavButtons from "../../FormInputs/NavButton";
 
 
@@ -53,16 +51,7 @@ const TournamentDetails = () => {
   };
 
 
-  const gender = [
-    {
-      id: "male",
-      title: "Male",
-    },
-    {
-      id: "female",
-      title: "Female",
-    },
-  ];
+  
 
   return (
     <form className="px-12 py-4" onSubmit={handleSubmit(processData)}>

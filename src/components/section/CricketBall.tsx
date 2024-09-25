@@ -1,4 +1,4 @@
-import { Canvas ,useFrame} from "@react-three/fiber"
+import { Canvas} from "@react-three/fiber"
 import { OrbitControls, useGLTF } from "@react-three/drei"
 import { useRef } from "react";
 
@@ -8,13 +8,13 @@ function CricketBallModel(){
     const ballRef = useRef();
 
     // Rotate the ball on every frame
-  useFrame(() => {
-    if (ballRef.current) {
-      ballRef.current.rotation.y += 0.005; // Adjust this value for speed of rotation
-      ballRef.current.rotation.x += 0.005;
-      ballRef.current.rotation.z += 0.005;
-    }
-  });
+  // useFrame(() => {
+  //   if (ballRef.current) {
+  //     ballRef.current.rotation.y += 0.005; // Adjust this value for speed of rotation
+  //     ballRef.current.rotation.x += 0.005;
+  //     ballRef.current.rotation.z += 0.005;
+  //   }
+  // });
     return(
         <primitive ref={ballRef} object={scene} scale={100 / 2}/>
     )
