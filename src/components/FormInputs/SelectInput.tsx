@@ -7,7 +7,17 @@ interface FormData  {
     dob : string ;
     location : string ;
     country : string ;
+    captainname : string;
+    teamname : string;
+    teamemail : string;
+    playerphone : number ;
+    noofplayers : number ;
+    permatch : number ;
+    matchdate : string ;
+    matchtime : string;
     gender ?: Array<{id : string , title : string}>
+    matchformat : Array<{id : string , title : string}>
+    opposingteam : Array<{id : string , title : string}>
 };
 export default function SelectInput({
   label,
@@ -16,7 +26,7 @@ export default function SelectInput({
   className = "sm:col-span-2",
   options = [],
   multiple = false,
-}: {label : string , name : string , register : UseFormRegister<FormData>  , className ?: string , options ?: Array<{id : string , title : string}>, multiple ?: boolean}) {
+}: {label : string , name : keyof FormData , register : UseFormRegister<FormData>  , className ?: string , options ?: Array<{id : string , title : string}>, multiple ?: boolean}) {
   return (
     <div className={className}>
       <label

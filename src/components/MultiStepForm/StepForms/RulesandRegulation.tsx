@@ -21,7 +21,18 @@ type Inputs = {
     dob : string ;
     location : string ;
     country : string ;
+    captainname : string;
+    teamname : string;
+    teamemail : string;
+    playerphone : number ;
+    noofplayers : number ;
+    permatch : number ;
+    matchdate : string ;
+    matchtime : string;
     gender ?: Array<{id : string , title : string}>
+    matchformat : Array<{id : string , title : string}>
+    opposingteam : Array<{id : string , title : string}>
+    
 };
 
 
