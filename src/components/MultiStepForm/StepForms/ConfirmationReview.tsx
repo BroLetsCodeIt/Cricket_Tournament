@@ -51,7 +51,6 @@ const ConfirmationReview = () => {
       navigate("/");
     }, 2000);
   };
- 
   if(!isSubmitted){
     return (
         <form className="px-12 py-4" onSubmit={handleSubmit(processData)}>
